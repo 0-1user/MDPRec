@@ -1,0 +1,39 @@
+
+# SASRec
+n_layers: 2
+
+n_heads: 2
+hidden_size: 64
+inner_size: 256
+hidden_dropout_prob: 0.3
+attn_dropout_prob: 0.5
+hidden_act: "gelu"
+layer_norm_eps: 1e-12
+initializer_range: 0.02
+initializer_weight: [1.0, 1.0]
+loss_type: "CE"
+
+align_expert_num: 4
+align_gate_selection: softmax
+align_gate_top_k: 4
+
+
+time_interval_expert_num: 3
+time_interval_top_k: 3
+time_interval_gate_selection: softmax
+interval_scale: 50
+
+
+timestamp_expert_num: 4
+timestamp_top_k: 2
+timestamp_gate_selection: softmax
+# 'MinuteOfHour' 'HourOfDay','DayOfWeek', 'DayOfMonth' , 'DayOfYear' , 'WeekOfYear', 'WeekdayAndWeekend','MonthOfYear','SeasonOfYear' 
+
+time_feature_types: ['HourOfDay','DayOfWeek']  # SeasonOfYear
+c_out: 4
+rda: 1
+rdb: 1
+
+ksize: 3
+period: 50  
+pred_len: 50

@@ -1,0 +1,9 @@
+bert_hidden_units : 64
+bert_dropout : 0.5
+bert_attn_dropout : 0.5
+bert_num_blocks : 2
+
+loss_type: 'CE'                  # (str) The type of loss function.
+initializer_range: 0.02          # (float) The standard deviation for normal initialization.
+layer_norm_eps: 1e-12            # (float) A value added to the denominator for numerical stability.
+hidden_act: 'gelu'               # (str) The activation function in feed-forward layer.

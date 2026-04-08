@@ -1,0 +1,25 @@
+# 基本配置
+data_path: './dataset/'  # 数据集路径（需符合RecBole格式）
+dataset: 'ml-1m'  # 数据集名称
+seed: 1013
+
+# 模型参数
+model: MOJITO
+embedding_size: 64
+tempo_embedding_dim: 16
+num_blocks: 2
+num_heads: 2
+dropout_rate: 0.3
+lambda_trans_seq: 0.5
+lambda_glob: 0.1
+loss_type: 'BPR'
+
+# 训练参数
+epochs: 100
+batch_size: 512
+learning_rate: 0.001
+eval_step: 1
+valid_metric: 'NDCG@10'
+
+# 序列参数
+MAX_ITEM_LIST_LENGTH: 50  # 对应原seqlen=50
