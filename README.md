@@ -37,7 +37,9 @@ To run MDPRec, just use the following code.
 python run_mdprec.py --model MDPRec --dataset xx
 ```
 
-  Baseline
+  **Baseline**
+
+  The model implementation and configuration files are located in the `recbole_baseline` folder
 ```
 python run_baseline.py --model xx --dataset xx
 ```
