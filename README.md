@@ -19,8 +19,8 @@ To ensure reproducibility and a rigorous fair comparison, all experiments are co
 
 ###  2. Datasets
 
-Download datasets (Beauty、 Video、 Electronics) from [Amazon product data](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/links.html) and [LastFM](https://grouplens.org/datasets/hetrec-2011/). And put the files in `./dataset/`. After that, use the data preprocessing code to preprocess the data. We provide the processed Beauty dataset [link](https://drive.google.com/drive/folders/1e0xO6On-Yo2p4dsESG6ZX-u6jxP6cRyi?usp=drive_link) for your reference. After downloading, just unzip the zip file into the folder of `./dataset/`. At the same time, you can also download the trained model.
-
+Download datasets (Beauty、 Video、 Electronics) from [Amazon product data](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/links.html) and [LastFM](https://grouplens.org/datasets/hetrec-2011/). And put the files in `./dataset/`. After that, use the data preprocessing code to preprocess the data. We provide the processed dataset [link](https://drive.google.com/drive/folders/1e0xO6On-Yo2p4dsESG6ZX-u6jxP6cRyi?usp=drive_link) for your reference. After downloading, just unzip the zip file into the folder of `./dataset/`. At the same time, you can also download the trained model.
+ 
 ###  3. Training MDPRec Model
 
 #### 3.1  Environment  
