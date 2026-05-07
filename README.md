@@ -10,8 +10,24 @@ The architecture of MDPRec, as shown in Figure 1. MDPRec is a dual-branch framew
 
 ![Figure 1](./figure/model.png)
 
-<p align="left"><b>Figure&nbsp;1</b> The architecture of the MDPRec.</p>
+<!-- <p align="left"><b>Figure&nbsp;1</b> The architecture of the MDPRec.</p> -->
 
+## Appendix B
+**Analysis of the Impact of Learning Rates and Embedding Dimensions on Model Performance**
+
+To provide direct evidence for the use of fixed learning rates and embedding dimensions in MDPRec and baseline
+models, we selected models encompassing Transformer, MLP, Mamba architectures, frequency modelling, and MDPRec
+methods for experiments. Specifically, on the LastFM and Video datasets, we fixed all other training parameters and
+varied only the learning rate or embedding dimension in each iteration to obtain recommendation results from the five
+models. As shown in Figure 11-12, we observe that: (1) The five models with different architectures exhibit consistent
+trends in learning rate on the LastFM and Video datasets, and the best results are obtained when the learning rate is
+0.001. (2) Except for MDPRec, SASRec, FMLPRec, BSARec exhibit consistent trends in embedding dimension, MDPRec
+may demonstrate a stronger advantage in high-dimensional modeling due to its unique structure. The Figure 11-12
+show that when the embedding dimension is set to 64, four models deliver the best performance, Mamba4Rec delivers
+competitive performance. Therefore, it is reasonable to set the learning rate to 0.001 and the embedding dimension to
+64 for MDPRec and the baseline models; this is also consistent with the settings in the paper [2, 8, 19, 25, 26, 28, 57].
+
+![Figure 11-12](./figure/appendixb.png)
 
 ##  Experimental Details
 ### 1. Implementation Details & Fairness Protocol
