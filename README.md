@@ -7,7 +7,7 @@ The architecture of MDPRec, as shown in Figure 1. MDPRec is a dual-branch framew
 (2) Mixture-of-Experts (MoE): A Coarse-grained Temporal MoE (CMoE) and a Fine-grained Temporal MoE (FMoE), which adaptively extract patterns at their respective temporal scales. 
 (3) Period-Aware Sequence Encoder: It encodes the sequence with an emphasis on period dependencies. 
 (4) Dual Dependency Interaction MoE (DMoE): It fuses the two branches to model cross-scale interactions and produces a unified user representation for next-item prediction. 
-In addition, we discussed the computational complexity of **MDPRec** in document [complexity-analysis.pdf](https://github.com/0-1user/MDPRec/blob/master/complexity-analysis.pdf).
+In addition, we discuss the computational complexity of **MDPRec** in document [complexity-analysis.pdf](https://github.com/0-1user/MDPRec/blob/master/complexity-analysis.pdf).
 ![Figure 1](./figure/model.png)
 
 <!-- <p align="left"><b>Figure&nbsp;1</b> The architecture of the MDPRec.</p> -->
