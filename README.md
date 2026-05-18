@@ -31,7 +31,7 @@ competitive performance. Therefore, it is reasonable to set the learning rate to
 
 ##  Experimental Details
 ### 1. Implementation Details & Fairness Protocol
-To ensure reproducibility and a rigorous fair comparison, all experiments are conducted on a unified hardware platform with a single Nvidia RTX PRO 6000 with 96 GB of VRAM. MDPRec is implemented in PyTorch. For reproducibility, we introduce the best hyperparameter configurations for each dataset in document [hyper.pdf](https://github.com/0-1user/MDPRec/blob/master/hyper.pdf).
+To ensure reproducibility and a rigorous fair comparison, all experiments are conducted on a unified hardware platform with a single Nvidia RTX PRO 6000 with 96 GB of VRAM. MDPRec is implemented in PyTorch. For reproducibility, we introduce the best hyperparameter configurations of baselines for each dataset in document [hyper.pdf](https://github.com/0-1user/MDPRec/blob/master/hyper.pdf).
 
 ###  2. Datasets
 
