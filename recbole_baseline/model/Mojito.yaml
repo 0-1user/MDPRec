@@ -1,0 +1,12 @@
+# Mojito architecture only; data/training/evaluation use config/data.yaml.
+hidden_size: 64
+n_layers: 2
+n_heads: 2
+dropout_prob: 0.3
+tempo_embedding_dim: 16
+tempo_linspace: 8
+use_year: true
+lambda_trans_seq: 0.5
+lambda_glob: 0.1
+n_fism_items: 20
+fism_beta: 1.0

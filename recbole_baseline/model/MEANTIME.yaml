@@ -1,0 +1,9 @@
+# Architecture only. Training/data/metrics inherit config/data.yaml.
+hidden_size: 64
+n_layers: 2
+dropout_prob: 0.2
+initializer_range: 0.02
+absolute_kernel_types: p-d
+relative_kernel_types: s-l
+time_unit_divide: 1
+freq: 10000
